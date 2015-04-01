@@ -10,7 +10,7 @@ import com.zhp.text.util.TextUtil;
 
 public class App {
 	public static void main(String[] args) throws IOException {
-		List<Document> corpusData = TextUtil.readCorpusLines("D:/sensiword/稿件数据/分类语料/Bayes/corpus.txt");
+		List<Document> corpusData = TextUtil.readCorpusLines("D:/corpus.txt");
 		FeatureExtraction_IG ig = new FeatureExtraction_IG(corpusData);
 		FeatureStats stats = ig.selectFeature(0.001);
 		System.out.println(stats.featureCategoryJointCount.size());

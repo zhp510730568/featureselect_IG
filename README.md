@@ -1,5 +1,6 @@
 # featureselect_IG
 Select feature by IG feature selection method
+使用的语料格式为：每一篇文档在一行中，文档分类号和文档内容由\t分割，文档内容内部各词有空格分割，生成语料时严格遵守改格式。
 
 在使用时请注意，本算法retainPercent值如果设置的比较大，算法运行会很慢。但是实际使用时，比例会设置的比较低，低于0.2时，效率还是能接受的。
 
